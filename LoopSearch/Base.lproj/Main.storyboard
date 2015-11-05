@@ -21,12 +21,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <searchBar key="tableFooterView" contentMode="redraw" placeholder="See whats new in the Loop" id="Q3T-1R-S9Q">
+                                <searchBar key="tableFooterView" contentMode="redraw" placeholder="See what's new in the Loop" id="Q3T-1R-S9Q">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <animations/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="BYZ-38-t0r" id="QuD-Ur-D4m"/>
+                                    </connections>
                                 </searchBar>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="yEh-Y5-WnK"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9eR-oY-xJ6"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <animations/>

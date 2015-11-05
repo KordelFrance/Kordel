@@ -24,7 +24,25 @@ class SearchViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+}
 
+extension SearchViewController: UISearchBarDelegate{
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        print("The search text is: '\(searchBar.text!)'")
+    }
+}
 
+extension SearchViewController: UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView (tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
+
+extension SearchViewController: UITableViewDelegate {
 }
 
