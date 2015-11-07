@@ -37,6 +37,7 @@ extension SearchViewController: UISearchBarDelegate{
         
         searchResults = [SearchResult]()
         
+        //if searchBar.text! != "space" {
         for i in 0...2 {
             let searchResult = SearchResult()
             searchResult.name = String(format: "Fake Result %d for ", i)
@@ -44,6 +45,7 @@ extension SearchViewController: UISearchBarDelegate{
             //comment when integrating indix
             searchResult.artistName = searchBar.text!
             searchResults.append(searchResult)
+            }
         }
         
         tableView.reloadData()
