@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="k3n-eN-z0b">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="39h-Id-iRz">
+            <objects>
+                <viewController id="vBO-iH-XbF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qd1-4j-B7W"/>
+                        <viewControllerLayoutGuide type="bottom" id="dMv-1S-7jF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M4p-iR-zdf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qcX-W5-bdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307" y="-249"/>
+        </scene>
         <!--Search View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -52,7 +71,150 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="429"/>
+            <point key="canvasLocation" x="531" y="429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XfY-9E-0eL">
+            <objects>
+                <viewController id="KPM-H7-oGX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OE3-uH-y8a"/>
+                        <viewControllerLayoutGuide type="bottom" id="RKy-f4-pik"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GHl-ch-pbS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebR-1p-bqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="1180"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bfJ-oI-9ge">
+            <objects>
+                <viewController id="Jlf-7l-mTs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d3h-Y4-KEI"/>
+                        <viewControllerLayoutGuide type="bottom" id="fay-j3-bM3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Nc-kK-DEt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEl-MG-Qpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="1180"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y4R-K0-kMt">
+            <objects>
+                <viewController id="wt1-yQ-zO3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XEX-r4-gfx"/>
+                        <viewControllerLayoutGuide type="bottom" id="ghm-AQ-TNK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EWv-O7-zjO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBJ-Zb-CNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407" y="-250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oYf-HT-tvi">
+            <objects>
+                <viewController id="k3n-eN-z0b" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VWQ-S1-M0w"/>
+                        <viewControllerLayoutGuide type="bottom" id="mnH-64-fu7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x3R-Ac-jG7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IN7-a0-CcB">
+                                <rect key="frame" x="0.0" y="28" width="120" height="50"/>
+                                <animations/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="fTD-aP-rSd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRm-hs-nqe">
+                                <rect key="frame" x="240" y="550" width="120" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.3528304974" green="0.3528304974" blue="0.3528304974" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Discovery"/>
+                                <connections>
+                                    <segue destination="Jlf-7l-mTs" kind="presentation" id="dmJ-az-kkg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6js-y7-i3i">
+                                <rect key="frame" x="360" y="550" width="120" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.3528304974" green="0.3528304974" blue="0.3528304974" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Chat"/>
+                                <connections>
+                                    <segue destination="wt1-yQ-zO3" kind="presentation" id="Oqn-Oj-tGi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHj-Ci-KnX">
+                                <rect key="frame" x="480" y="550" width="120" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.3528304974" green="0.3528304974" blue="0.3528304974" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="User Profile"/>
+                                <connections>
+                                    <segue destination="vBO-iH-XbF" kind="presentation" id="3at-FL-4af"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ES-a7-wV4" colorLabel="IBBuiltInLabel-Gray">
+                                <rect key="frame" x="0.0" y="550" width="120" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.35283049738219896" green="0.35283049738219896" blue="0.35283049738219896" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Home"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTL-dX-lcJ">
+                                <rect key="frame" x="480" y="28" width="120" height="50"/>
+                                <animations/>
+                                <state key="normal" title="CamSearch"/>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYr-tE-axV" colorLabel="IBBuiltInLabel-Gray">
+                                <rect key="frame" x="120" y="550" width="120" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.3528304974" green="0.3528304974" blue="0.3528304974" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="New Listing"/>
+                                <connections>
+                                    <segue destination="KPM-H7-oGX" kind="presentation" id="EFg-XC-pLn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpO-0A-oNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407" y="429"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
 </document>
