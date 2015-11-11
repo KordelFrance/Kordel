@@ -80,13 +80,13 @@
 				8B88B13C1BED88F100C5C3DA /* SearchResultCell.xib */,
 				8B68525F1BF1D320003CE8DB /* NothingFoundCell.xib */,
 				8B88B12C1BEC0B4200C5C3DA /* Main.storyboard */,
+				8B68525D1BF1CD40003CE8DB /* SearchResultCell.swift */,
 				8B68525B1BF171D9003CE8DB /* ProfileViewController.swift */,
 				8B6852591BF1719A003CE8DB /* ChatViewController.swift */,
 				8B6852571BF17129003CE8DB /* DiscoveryViewController.swift */,
 				8B88B12F1BEC0B4200C5C3DA /* Assets.xcassets */,
 				8B88B1311BEC0B4200C5C3DA /* LaunchScreen.storyboard */,
 				8B88B1341BEC0B4200C5C3DA /* Info.plist */,
-				8B68525D1BF1CD40003CE8DB /* SearchResultCell.swift */,
 			);
 			path = LoopSearch;
 			sourceTree = "<group>";
