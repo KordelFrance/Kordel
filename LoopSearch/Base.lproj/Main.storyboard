@@ -358,22 +358,11 @@
                                     <segue destination="wt1-yQ-zO3" kind="presentation" id="Oqn-Oj-tGi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHj-Ci-KnX">
-                                <rect key="frame" x="480" y="550" width="120" height="50"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.3528304974" green="0.3528304974" blue="0.3528304974" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="User Profile"/>
-                                <connections>
-                                    <segue destination="vBO-iH-XbF" kind="presentation" id="3at-FL-4af"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ES-a7-wV4" colorLabel="IBBuiltInLabel-Gray">
                                 <rect key="frame" x="0.0" y="550" width="120" height="50"/>
                                 <animations/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.3528304974" green="0.3528304974" blue="0.3528304974" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Home"/>
                             </button>
                             <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYr-tE-axV" colorLabel="IBBuiltInLabel-Gray">
@@ -396,7 +385,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U5w-S7-Y8Q">
-                                <rect key="frame" x="180" y="227" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="114" width="600" height="437"/>
                                 <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdG-cE-ieJ">
@@ -407,10 +396,23 @@
                                     <action selector="CameraAction:" destination="jpO-0A-oNK" eventType="touchUpInside" id="yYq-iP-M36"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHj-Ci-KnX">
+                                <rect key="frame" x="480" y="550" width="120" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.3528304974" green="0.3528304974" blue="0.3528304974" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="User Profile"/>
+                                <connections>
+                                    <segue destination="vBO-iH-XbF" kind="presentation" id="3at-FL-4af"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="Camera" destination="sdG-cE-ieJ" id="vgg-v6-Puq"/>
                         <outlet property="ImageDisplay" destination="U5w-S7-Y8Q" id="z6g-hW-CwS"/>

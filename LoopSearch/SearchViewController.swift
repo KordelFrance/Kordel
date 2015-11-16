@@ -68,7 +68,7 @@ extension SearchViewController: UISearchBarDelegate{
                     print("Dictionary \(dictionary)")
                     
                     //call parseDictionary method below
-                    parseDictionary(dictionary)
+                    searchResults = parseDictionary(dictionary)
                     tableView.reloadData()
                     return
                 }
@@ -145,11 +145,11 @@ extension SearchViewController: UITableViewDataSource {
         //this statement calls the stringByAdding... method to escape the "special characters" induced crash such as spaces
         let escapedSearchText = searchText.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
         
-        let urlString = String(format:  "https://api.semantics3.com/test/v1/", escapedSearchText)
+        let urlString = String(format:  "https://itunes.apple.com/search?term=%@", escapedSearchText)
         let url = NSURL(string: urlString)
         return url!
     }
-    //https://itunes.apple.com/search?term=%@
+    //https://api.semantics3.com/test/v1/
     
     func performStoreRequestWithURL(url: NSURL) -> String? {
         do {
@@ -180,13 +180,15 @@ extension SearchViewController: UITableViewDataSource {
         presentViewController(alert, animated: true, completion: nil)
     }
     
-    func parseDictionary(dictionary: [String: AnyObject]) {
+    func parseDictionary(dictionary: [String: AnyObject]) -> [SearchResult] {
         
         //1 make sure the dictionary has a key named results that contains an array
         guard let array = dictionary["results"] as? [AnyObject] else {
             print ("Expected 'results' array")
-            return
+            return []
         }
+        
+        var searchResults = [SearchResult]()
         
         //2 lppk at each of the array's elements
         for resultDict in array {
@@ -195,12 +197,43 @@ extension SearchViewController: UITableViewDataSource {
             if let resultDict = resultDict as? [String: AnyObject] {
              
                 //4 print out the value of wrapperType and kind fields
-                if let wrapperType = resultDict ["wrapperType"] as? String,
-                    let kind = resultDict["kind"] as? String {
-                        print("wrapperType: \(wrapperType), kind: \(kind)")
+                var searchResult: SearchResult?
+                
+                if let wrapperType = resultDict ["wrapperType"] as? String{
+                    switch wrapperType {
+                        case "track":
+                        searchResult = parseTrack(resultDict)
+                        default:
+                        break
+                    }
+                }
+                if let result = searchResult {
+                    searchResults.append(result)
                 }
             }
         }
+        return searchResults
+    }
+    
+    //instantiate a new SearchResult object then get the values out of the dictionary and put them into the SearchResult's properties
+    func parseTrack(dictionary: [String: AnyObject]) -> SearchResult {
+        let searchResult = SearchResult()
+        
+        searchResult.name = dictionary["trackName"] as! String
+        searchResult.artistName = dictionary["artistName"] as! String
+        searchResult.artworkURL60 = dictionary["artworkUrl60"] as! String
+        searchResult.artworkURL100 = dictionary["artworkUrl100"] as! String
+        searchResult.storeURL = dictionary["trackViewUrl"] as! String
+        searchResult.kind = dictionary["kind"] as! String
+        searchResult.currency = dictionary["currency"] as! String
+        
+        if let price = dictionary["trackPrice"] as? Double {
+            searchResult.price = price
+        }
+        if let genre = dictionary["primaryGenreName"] as? String {
+            searchResult.genre = genre
+        }
+        return searchResult
     }
 }
 

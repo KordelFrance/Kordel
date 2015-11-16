@@ -61,5 +61,5 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     */
 
 }
-//extension HomeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
     
