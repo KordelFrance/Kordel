@@ -24,6 +24,9 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="k3n-eN-z0b" kind="presentation" id="Lbr-mV-aGE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNP-0Q-T5c">
                                 <rect key="frame" x="120" y="550" width="120" height="50"/>
@@ -62,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcX-W5-bdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31" y="-287"/>
+            <point key="canvasLocation" x="199" y="-403"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -134,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="441"/>
+            <point key="canvasLocation" x="604" y="429"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XfY-9E-0eL">
@@ -154,6 +157,9 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="k3n-eN-z0b" kind="presentation" id="oGm-uz-N8l"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSS-zs-OPp">
                                 <rect key="frame" x="120" y="550" width="120" height="50"/>
@@ -190,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebR-1p-bqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565" y="1180"/>
+            <point key="canvasLocation" x="376" y="1305"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bfJ-oI-9ge">
@@ -210,6 +216,9 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="k3n-eN-z0b" kind="presentation" id="Oig-bu-8hJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ7-82-eVI">
                                 <rect key="frame" x="120" y="550" width="120" height="50"/>
@@ -246,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEl-MG-Qpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-78" y="1180"/>
+            <point key="canvasLocation" x="-1174" y="1426"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Y4R-K0-kMt">
@@ -294,6 +303,9 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="k3n-eN-z0b" kind="presentation" id="Om6-tW-D6n"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -302,12 +314,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBJ-Zb-CNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1159" y="104"/>
+            <point key="canvasLocation" x="-1441" y="429"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="oYf-HT-tvi">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="k3n-eN-z0b" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="k3n-eN-z0b" customClass="HomeViewController" customModule="LoopSearch" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VWQ-S1-M0w"/>
                         <viewControllerLayoutGuide type="bottom" id="mnH-64-fu7"/>
@@ -364,11 +376,6 @@
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Home"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTL-dX-lcJ">
-                                <rect key="frame" x="480" y="28" width="120" height="50"/>
-                                <animations/>
-                                <state key="normal" title="CamSearch"/>
-                            </button>
                             <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYr-tE-axV" colorLabel="IBBuiltInLabel-Gray">
                                 <rect key="frame" x="120" y="550" width="120" height="50"/>
                                 <animations/>
@@ -380,15 +387,43 @@
                                     <segue destination="KPM-H7-oGX" kind="presentation" id="EFg-XC-pLn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZj-9S-Znw">
+                                <rect key="frame" x="240" y="76" width="92" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Photo Library"/>
+                                <connections>
+                                    <action selector="PhotoLibraryAction:" destination="jpO-0A-oNK" eventType="touchUpInside" id="vcw-J6-1k9"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U5w-S7-Y8Q">
+                                <rect key="frame" x="180" y="227" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdG-cE-ieJ">
+                                <rect key="frame" x="259" y="38" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="CameraAction:" destination="jpO-0A-oNK" eventType="touchUpInside" id="yYq-iP-M36"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Camera" destination="sdG-cE-ieJ" id="vgg-v6-Puq"/>
+                        <outlet property="ImageDisplay" destination="U5w-S7-Y8Q" id="z6g-hW-CwS"/>
+                        <outlet property="PhotoLibrary" destination="YZj-9S-Znw" id="FIr-Cp-zeM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpO-0A-oNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-407" y="429"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Om6-tW-D6n"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
 </document>
