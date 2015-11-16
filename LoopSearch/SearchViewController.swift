@@ -67,6 +67,8 @@ extension SearchViewController: UISearchBarDelegate{
                 if let dictionary = parseJSON(jsonString) {
                     print("Dictionary \(dictionary)")
                     
+                    //call parseDictionary method below
+                    parseDictionary(dictionary)
                     tableView.reloadData()
                     return
                 }
@@ -143,10 +145,11 @@ extension SearchViewController: UITableViewDataSource {
         //this statement calls the stringByAdding... method to escape the "special characters" induced crash such as spaces
         let escapedSearchText = searchText.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
         
-        let urlString = String(format: "https://itunes.apple.com/search?term=%@", escapedSearchText)
+        let urlString = String(format:  "https://api.semantics3.com/test/v1/", escapedSearchText)
         let url = NSURL(string: urlString)
         return url!
     }
+    //https://itunes.apple.com/search?term=%@
     
     func performStoreRequestWithURL(url: NSURL) -> String? {
         do {
@@ -154,7 +157,6 @@ extension SearchViewController: UITableViewDataSource {
         } catch {
             print("Download Error: \(error)")
                 return nil
-
         }
     }
     
@@ -176,6 +178,29 @@ extension SearchViewController: UITableViewDataSource {
         alert.addAction(action)
         
         presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func parseDictionary(dictionary: [String: AnyObject]) {
+        
+        //1 make sure the dictionary has a key named results that contains an array
+        guard let array = dictionary["results"] as? [AnyObject] else {
+            print ("Expected 'results' array")
+            return
+        }
+        
+        //2 lppk at each of the array's elements
+        for resultDict in array {
+            
+            //3 cast objects to the right type (coming from an Obj-C library)
+            if let resultDict = resultDict as? [String: AnyObject] {
+             
+                //4 print out the value of wrapperType and kind fields
+                if let wrapperType = resultDict ["wrapperType"] as? String,
+                    let kind = resultDict["kind"] as? String {
+                        print("wrapperType: \(wrapperType), kind: \(kind)")
+                }
+            }
+        }
     }
 }
 
