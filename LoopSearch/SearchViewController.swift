@@ -149,7 +149,9 @@ extension SearchViewController: UITableViewDataSource {
         let url = NSURL(string: urlString)
         return url!
     }
-    //https://api.semantics3.com/test/v1/
+    //
+    //https://api.semantics3.com/test/v1/products?q=
+    //https://api.indix.com/v2/products/suggestions?countryCode=US&q=nik&app_id=8575b1cf&app_key=8bf4250c7bdd6c1a9a5df56abc4eb2d5
     
     func performStoreRequestWithURL(url: NSURL) -> String? {
         do {

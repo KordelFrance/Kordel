@@ -97,15 +97,16 @@
                                 <color key="backgroundColor" red="0.30345824830000001" green="0.60370699729999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Discovery"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90L-E5-uGU">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NkZ-pD-OWq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3G2-QB-p16">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <animations/>
+                                    <state key="normal" title="Button"/>
+                                </button>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="yEh-Y5-WnK"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="9eR-oY-xJ6"/>
@@ -119,6 +120,44 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="QuD-Ur-D4m"/>
                                 </connections>
                             </searchBar>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gv-rB-2Fk">
+                                <rect key="frame" x="0.0" y="550" width="120" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="home-inactive"/>
+                                <connections>
+                                    <segue destination="k3n-eN-z0b" kind="presentation" id="uaT-nt-3uT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sra-RL-ewn">
+                                <rect key="frame" x="120" y="550" width="120" height="53"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="add-inactive"/>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVg-0s-cdY">
+                                <rect key="frame" x="240" y="550" width="120" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="discover-inactive"/>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mod-6t-uPB">
+                                <rect key="frame" x="360" y="550" width="120" height="52"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="messaging-inactive"/>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abX-en-Uf6">
+                                <rect key="frame" x="480" y="550" width="120" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="user-inactive"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -137,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="429"/>
+            <point key="canvasLocation" x="501" y="421"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XfY-9E-0eL">
@@ -324,7 +363,7 @@
                         <viewControllerLayoutGuide type="top" id="VWQ-S1-M0w"/>
                         <viewControllerLayoutGuide type="bottom" id="mnH-64-fu7"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="x3R-Ac-jG7">
+                    <view key="view" alpha="0.65000000000000002" contentMode="scaleToFill" id="x3R-Ac-jG7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -336,24 +375,22 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="fTD-aP-rSd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRm-hs-nqe">
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRm-hs-nqe">
                                 <rect key="frame" x="240" y="550" width="120" height="50"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.3528304974" green="0.3528304974" blue="0.3528304974" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Discovery"/>
+                                <state key="normal" image="discover-inactive"/>
                                 <connections>
                                     <segue destination="Jlf-7l-mTs" kind="presentation" id="dmJ-az-kkg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6js-y7-i3i">
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6js-y7-i3i">
                                 <rect key="frame" x="360" y="550" width="120" height="50"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.3528304974" green="0.3528304974" blue="0.3528304974" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Chat"/>
+                                <state key="normal" image="messaging-inactive"/>
                                 <connections>
                                     <segue destination="wt1-yQ-zO3" kind="presentation" id="Oqn-Oj-tGi"/>
                                 </connections>
@@ -363,56 +400,67 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.3528304974" green="0.3528304974" blue="0.3528304974" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Home"/>
+                                <state key="normal" image="home-inactive"/>
                             </button>
-                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYr-tE-axV" colorLabel="IBBuiltInLabel-Gray">
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYr-tE-axV" colorLabel="IBBuiltInLabel-Gray">
                                 <rect key="frame" x="120" y="550" width="120" height="50"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.3528304974" green="0.3528304974" blue="0.3528304974" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="New Listing"/>
+                                <state key="normal" image="add-inactive"/>
                                 <connections>
                                     <segue destination="KPM-H7-oGX" kind="presentation" id="EFg-XC-pLn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZj-9S-Znw">
-                                <rect key="frame" x="240" y="76" width="92" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Photo Library"/>
-                                <connections>
-                                    <action selector="PhotoLibraryAction:" destination="jpO-0A-oNK" eventType="touchUpInside" id="vcw-J6-1k9"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U5w-S7-Y8Q">
-                                <rect key="frame" x="0.0" y="114" width="600" height="437"/>
-                                <animations/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdG-cE-ieJ">
-                                <rect key="frame" x="259" y="38" width="54" height="30"/>
+                                <rect key="frame" x="333" y="38" width="54" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
                                     <action selector="CameraAction:" destination="jpO-0A-oNK" eventType="touchUpInside" id="yYq-iP-M36"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHj-Ci-KnX">
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHj-Ci-KnX">
                                 <rect key="frame" x="480" y="550" width="120" height="50"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.3528304974" green="0.3528304974" blue="0.3528304974" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="User Profile"/>
+                                <state key="normal" image="user-inactive"/>
                                 <connections>
                                     <segue destination="vBO-iH-XbF" kind="presentation" id="3at-FL-4af"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="D2L-9r-oaH">
+                                <rect key="frame" x="0.0" y="114" width="600" height="435"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U5w-S7-Y8Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="435"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.076039292080000001" green="0.86299722329999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Looplist" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xje-7C-W5T">
+                                <rect key="frame" x="169" y="38" width="97" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.26551646023662967" green="0.90667052048507979" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZj-9S-Znw">
+                                <rect key="frame" x="314" y="76" width="92" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Photo Library"/>
+                                <connections>
+                                    <action selector="PhotoLibraryAction:" destination="jpO-0A-oNK" eventType="touchUpInside" id="vcw-J6-1k9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.076039292075077425" green="0.86299722326198047" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="Camera" destination="sdG-cE-ieJ" id="vgg-v6-Puq"/>
                         <outlet property="ImageDisplay" destination="U5w-S7-Y8Q" id="z6g-hW-CwS"/>
@@ -424,8 +472,15 @@
             <point key="canvasLocation" x="-407" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add-inactive" width="33" height="33"/>
+        <image name="discover-inactive" width="26" height="26"/>
+        <image name="home-inactive" width="36" height="34"/>
+        <image name="messaging-inactive" width="39" height="33"/>
+        <image name="user-inactive" width="33" height="33"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Om6-tW-D6n"/>
+        <segue reference="uaT-nt-3uT"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
 </document>
