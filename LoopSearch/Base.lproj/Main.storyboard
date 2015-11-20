@@ -441,13 +441,6 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <textField opaque="NO" clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Looplist" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xje-7C-W5T">
-                                <rect key="frame" x="169" y="38" width="97" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.26551646023662967" green="0.90667052048507979" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZj-9S-Znw">
                                 <rect key="frame" x="314" y="76" width="92" height="30"/>
                                 <animations/>
